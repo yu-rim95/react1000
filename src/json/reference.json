@@ -121,7 +121,32 @@
                 "alpha": "B",
                 "attr":"background-image",
                 "desc": "background-image 속성은 요소의 배경 이미지를 한 개나 여러 개 지정합니다."
+             },
+             { 
+                "num": 21,
+                "alpha": "B",
+                "attr":"background-origin",
+                "desc": "background-origin 속성은 배경 이미지의 위치를 어디서부터 시작할지 지정합니다."
+             },
+             { 
+                "num": 22,
+                "alpha": "B",
+                "attr":"background-position",
+                "desc": "background-position 속성은 백그라운드 이미지의 위치 영역을 설정합니다."
+             },
+             { 
+                "num": 23,
+                "alpha": "B",
+                "attr":"background-position",
+                "desc": "background-position 속성은 백그라운드 이미지의 위치 영역을 설정합니다."
+             },
+             { 
+                "num": 24,
+                "alpha": "B",
+                "attr":"background-position",
+                "desc": "background-position 속성은 백그라운드 이미지의 위치 영역을 설정합니다."
              }
+
 
         ]
     }
