@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-function Header() {
+function Header({ info }) {
   return (
     <header id="header">
       <div className="header__inner">
@@ -9,7 +8,7 @@ function Header() {
           <Link to="/portfolio">Portfolio</Link>
         </div>
         <div className="header__inner__logo">
-          <Link to="/">yuim</Link>
+          <Link to="/">yurim</Link>
         </div>
         <div className="header__inner__menu">
           <Link to="#">
@@ -47,17 +46,17 @@ function Header() {
           </li>
         </ul>
       </div>
-      <div className="header__info">
+      <div className="header__info" id={info}>
         <div>
           <h4>email</h4>
           <p>
-            <a href="mailto:csm2205@naver.com">csm2205@naver.com</a>
+            <a href="mailto:leehr7603@naver.com">csm2205@naver.com</a>
           </p>
         </div>
         <div>
           <h4>kakao</h4>
           <p>
-            <a href="/">webstupids</a>
+            <a href="/">cyr2205</a>
           </p>
         </div>
         <div>
@@ -90,5 +89,4 @@ function Header() {
     </header>
   );
 }
-
 export default Header;

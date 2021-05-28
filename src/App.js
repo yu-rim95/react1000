@@ -4,7 +4,7 @@ import Main from "./components/pages/Main";
 import About from "./components/pages/About";
 import Reference from "./components/pages/Reference";
 import Youtube from "./components/pages/Youtube";
-import Scropt from "./components/pages/Scropt";
+import Script from "./components/pages/Script";
 import Portfolio from "./components/pages/Portfolio";
 import Contact from "./components/pages/Contact";
 
@@ -15,7 +15,7 @@ function App() {
       <Route path="/About" exact component={About} />
       <Route path="/Reference" exact component={Reference} />
       <Route path="/Youtube" exact component={Youtube} />
-      <Route path="/Scropt" exact component={Scropt} />
+      <Route path="/Script" exact component={Script} />
       <Route path="/Portfolio" exact component={Portfolio} />
       <Route path="/Contact" exact component={Contact} />
     </Router>
