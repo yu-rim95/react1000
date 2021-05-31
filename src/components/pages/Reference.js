@@ -5,6 +5,7 @@ import Header from "../Header";
 import Layout from "../Layout";
 import Footer from "../Footer";
 import WrapTitle from "../basics/WrapTitle";
+import ReferInfo from "../basics/ReferInfo";
 //import { Link } from "react-router-dom";
 // function ReferText({ alpha, attr, desc }) {
 //   return (
@@ -85,7 +86,7 @@ class Reference extends React.Component {
         data: { htmlRefer },
       },
     } = await axios.get(
-      "https://yu-rim95.github.io/react1000/src/components/json/reference.json"
+      "https://yu-rim95.github.io/react1000/src/json/reference.json"
     );
     //console.log(htmlRefer);
     this.setState({ htmlRefer, isLoading: false });
@@ -97,7 +98,7 @@ class Reference extends React.Component {
     }, 3000);
   }
   render() {
-    const { isLoading } = this.state;
+    const { isLoading, htmlRefer } = this.state;
     return (
       <div>
         {isLoading ? (
@@ -112,7 +113,15 @@ class Reference extends React.Component {
                   <div className="refer-cont">
                     <div className="refer-table">
                       <h3>CSS Reference</h3>
-                      <ul>{/* {htmlRefer.map((text)=>()} */}</ul>
+                      <ul>
+                        {htmlRefer.map((refer) => (
+                          <ReferInfo
+                            alpha={refer.alpha}
+                            attr={refer.attr}
+                            desc={refer.desc}
+                          />
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>
